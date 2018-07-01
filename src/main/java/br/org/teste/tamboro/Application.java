@@ -15,18 +15,20 @@ public class Application {
 	void started() {
 		QuestionOne questionOne = new QuestionOne();
 		questionOne.preencherLista(10);
-		System.out.println(questionOne.getElementoDoMeio());
+		System.out.println("Questão 1 - Lista com 10 Números: ");
+		System.out.println("Elemento do meio: " + questionOne.getElementoDoMeio());
 
 		QuestionFour questionFour = new QuestionFour();
-		System.out.println(questionFour.match("a", "a"));
-		System.out.println(questionFour.match("a", "a*"));
-		System.out.println(questionFour.match("", "a*"));
-		System.out.println(questionFour.match("", "a*a"));
-		System.out.println(questionFour.match("a", "."));
-		System.out.println(questionFour.match("a", ".*"));
-		System.out.println(questionFour.match("ab", "a*b*"));
-		System.out.println(questionFour.match("ab", "a*.*b"));
-		System.out.println(questionFour.match("ab", "a*c"));
+		System.out.println("Questão 4 - Asserções: ");
+		System.out.println("(a, a) - " + questionFour.match("a", "a"));
+		System.out.println("(a, a*) - " + questionFour.match("a", "a*"));
+		System.out.println("(, a*) - " + questionFour.match("", "a*"));
+		System.out.println("(, a*a) - " + questionFour.match("", "a*a"));
+		System.out.println("(a, .) - " + questionFour.match("a", "."));
+		System.out.println("(a, .*) - " + questionFour.match("a", ".*"));
+		System.out.println("(ab, a*b*) - " + questionFour.match("ab", "a*b*"));
+		System.out.println("(ab, a*.*b) - " + questionFour.match("ab", "a*.*b"));
+		System.out.println("(ab, a*c) - " + questionFour.match("ab", "a*c"));
 	}
 
 	public static void main(String[] args) {

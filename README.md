@@ -4,7 +4,7 @@ Projeto feito em java 8 com Spring Boot e AssertJ para testes das funcionalidade
 # Questão 1 & Questão 4
 Se encontram respondidas no projeto. Para execução do projeto:
 ```
- mvn clean package install spring-boot:run
+ mvn clean package spring-boot:run
 ```
 
 # Questão 2
