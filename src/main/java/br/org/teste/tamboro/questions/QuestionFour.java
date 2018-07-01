@@ -17,11 +17,11 @@ public class QuestionFour {
         for (int i=0; i<patternChars.length; i++) {
 
             /* Cobre pattern de qualquer caracter [.] */
-            if (patternChars[i] == ANY_CHAR) {
+            if (patternChars[i] == this.ANY_CHAR) {
                 continue;
 
             /* Cobre pattern de repeticao [*] */
-            } else if ((i+1 < patternChars.length) && (patternChars[i+1] == REPEAT_CHAR)) {
+            } else if ((i+1 < patternChars.length) && (patternChars[i+1] == this.REPEAT_CHAR)) {
 
                 if (lastIndexInput == null) {
                     lastIndexInput = i;
@@ -35,7 +35,7 @@ public class QuestionFour {
                 }
 
             /* Cobre match simples */
-            } else if (patternChars[i] != REPEAT_CHAR) {
+            } else if (patternChars[i] != this.REPEAT_CHAR) {
                 if (lastIndexInput == null) {
                     lastIndexInput = i;
 

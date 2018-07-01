@@ -13,7 +13,7 @@ public class QuestionOneTest {
 
 	@Before
 	public void instanciarRecurso() {
-		questionOne = new QuestionOne();
+		this.questionOne = new QuestionOne();
 	}
 
 	@Test

@@ -14,60 +14,60 @@ public class QuestionFourTest {
 
     @Before
     public void instanciarRecurso() {
-        questionFour = new QuestionFour();
+        this.questionFour = new QuestionFour();
     }
 
     @Test
     public void matchSimpleText() {
-        Boolean check = questionFour.match("a", "a");
+        Boolean check = this.questionFour.match("a", "a");
         assertTrue(check);
     }
 
     @Test
     public void matchSimpleRepeatChar() {
-        Boolean check = questionFour.match("a", "a*");
+        Boolean check = this.questionFour.match("a", "a*");
         assertTrue(check);
     }
 
     @Test
     public void matchSimpleRepeatCharBlankInput() {
-        Boolean check = questionFour.match("", "a*");
+        Boolean check = this.questionFour.match("", "a*");
         assertTrue(check);
     }
 
     @Test
     public void matchWrongSimpleRepeatCharBlankInput() {
-        Boolean check = questionFour.match("", "a*a");
+        Boolean check = this.questionFour.match("", "a*a");
         assertFalse(check);
     } 
 
     @Test
     public void matchSimpleAnyChar() {
-        Boolean check = questionFour.match("a", ".");
+        Boolean check = this.questionFour.match("a", ".");
         assertTrue(check);
     }
 
     @Test
     public void matchSimpleRepeatWithAnyChar() {
-        Boolean check = questionFour.match("a", ".*");
+        Boolean check = this.questionFour.match("a", ".*");
         assertTrue(check);
     }
 
     @Test
     public void matchComplexRepeatChars() {
-        Boolean check = questionFour.match("ab", "a*b*");
+        Boolean check = this.questionFour.match("ab", "a*b*");
         assertTrue(check);
     }
 
     @Test
     public void matchComplextRepeatWithAnyChars() {
-        Boolean check = questionFour.match("ab", "a*.*b");
+        Boolean check = this.questionFour.match("ab", "a*.*b");
         assertTrue(check);
     }
 
     @Test
     public void matchComplexWrongRepeatChars() {
-        Boolean check = questionFour.match("ab", "a*c");
+        Boolean check = this.questionFour.match("ab", "a*c");
         assertFalse(check);
     }
 }
