@@ -1,11 +1,11 @@
-package br.org.teste.tamboro;
+package br.org.teste.estudo;
 
 import static org.assertj.core.api.Assertions.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import br.org.teste.tamboro.questions.QuestionOne;
+import br.org.teste.estudo.questions.QuestionOne;
 
 public class QuestionOneTest {
 

@@ -1,7 +1,7 @@
-package br.org.teste.tamboro.questions;
+package br.org.teste.estudo.questions;
 
-import br.org.teste.tamboro.questions.LinkedList;
-import br.org.teste.tamboro.questions.Node;
+import br.org.teste.estudo.questions.LinkedList;
+import br.org.teste.estudo.questions.Node;
 
 public class QuestionOne {
 

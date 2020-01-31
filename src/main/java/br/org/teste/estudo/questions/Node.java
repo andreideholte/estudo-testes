@@ -1,4 +1,4 @@
-package br.org.teste.tamboro.questions;
+package br.org.teste.estudo.questions;
 
 public class Node {
     private Node next;

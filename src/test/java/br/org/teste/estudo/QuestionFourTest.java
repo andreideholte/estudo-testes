@@ -1,4 +1,4 @@
-package br.org.teste.tamboro;
+package br.org.teste.estudo;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.org.teste.tamboro.questions.QuestionFour;
+import br.org.teste.estudo.questions.QuestionFour;
 
 public class QuestionFourTest {
 

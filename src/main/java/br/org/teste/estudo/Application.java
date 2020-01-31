@@ -1,12 +1,12 @@
-package br.org.teste.tamboro;
+package br.org.teste.estudo;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import br.org.teste.tamboro.questions.QuestionFour;
-import br.org.teste.tamboro.questions.QuestionOne;
+import br.org.teste.estudo.questions.QuestionFour;
+import br.org.teste.estudo.questions.QuestionOne;
 
 @SpringBootApplication
 public class Application {
